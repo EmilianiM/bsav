@@ -13,60 +13,63 @@
     @media(max-width:380px){.row{grid-template-columns:24px 1.2fr .9fr 76px;font-size:12px}.avatar{width:62px;height:62px}.name{font-size:14px}.ca{font-size:17px}}
     @media(prefers-reduced-motion:reduce){.pulse{animation:none}}
   </style>
-<style>.bar{width:90.1%}</style>
+<style>.bar{width:98.6%}</style>
 </head>
 <body>
 <main class="app">
-  <div class="brand"><div class="logo">BUT</div><div>CUISINES<div class="small">BOURGOGNE-SAVOIE · JPO</div><div class="asof">Mise à jour au 6 novembre 2026</div></div></div>
+  <div class="brand"><div class="logo">BUT</div><div>CUISINES<div class="small">BOURGOGNE-SAVOIE · JPO</div><div class="asof">Mise à jour au 9 novembre 2026</div></div></div>
   <div id="rankingsPage">
-  <section class="region"><div>🏆 <b>BOURGOGNE-SAVOIE</b><div><span class="rank">#12</span> au national</div><span class="up">▲ +10,4 % vs N−1</span></div><div><b>1 698 K€</b><div class="small">CA Cuisine</div></div></section>
+  <section class="region"><div>🏆 <b>BOURGOGNE-SAVOIE</b><div><span class="rank">#12</span> au national</div><span class="up">▲ +15,0 % vs N−1</span></div><div><b>1 857 K€</b><div class="small">CA Cuisine</div></div></section>
   <div class="tabs"><button class="tab active" data-view="sellers">👤 Vendeurs</button><button class="tab" data-view="stores">🏬 Magasins</button></div>
   <section id="sellers"><div class="title"><h1>CLASSEMENT VENDEURS</h1><b>CA TTC CUISINE BUFFET</b></div><div class="podium" id="sellerPodium"></div><div class="table" id="sellerTable"></div></section>
   <section id="stores" class="hide"><div class="title"><h1>CLASSEMENT MAGASINS</h1><b>CA TTC CUISINE</b></div><div class="podium" id="storePodium"></div><div class="table" id="storeTable"></div></section>
-  <section class="panel"><div class="bigstats"><div><strong>12e</strong><span class="small">/14 national</span></div><div><strong>1 698 K€</strong><span class="small">CA Cuisine</span></div><div><strong class="up">+10,4%</strong><span class="small">vs N−1</span></div></div><div style="margin-top:16px"><b>Objectif minimum région JPO</b><div class="progress"><div class="bar"></div></div><div class="small" style="margin-top:5px">1 698 K€ / 1 884 K€ · 90,1%</div></div></section>
+  <section class="panel"><div class="bigstats"><div><strong>12e</strong><span class="small">/14 national</span></div><div><strong>1 857 K€</strong><span class="small">CA Cuisine</span></div><div><strong class="up">+15,0%</strong><span class="small">vs N−1</span></div></div><div style="margin-top:16px"><b>Objectif minimum région JPO</b><div class="progress"><div class="bar"></div></div><div class="small" style="margin-top:5px">1 857 K€ / 1 884 K€ · 98,6%</div></div></section>
   </div>
-  <section id="challengesPage" class="hide"><div class="title"><h1>CHALLENGE RÉGIONAL</h1><b>MANCHE RETOUR · DU 23 AU 26 OCTOBRE</b></div><img class="challenge-poster" src="duel-manche-retour.png" alt="Duel des régions, manche retour entre la Bourgogne-Savoie et le Grand Est"><section class="panel"><div class="bigstats"><div><strong>1 698</strong><span class="small">K€ réalisés</span></div><div><strong>1 884</strong><span class="small">K€ objectif minimum</span></div><div><strong class="up">90,1%</strong><span class="small">atteints</span></div></div><div class="progress"><div class="bar"></div></div></section></section>
+  <section id="challengesPage" class="hide"><div class="title"><h1>CHALLENGE RÉGIONAL</h1><b>MANCHE RETOUR · DU 23 AU 26 OCTOBRE</b></div><img class="challenge-poster" src="duel-manche-retour.png" alt="Duel des régions, manche retour entre la Bourgogne-Savoie et le Grand Est"><section class="panel"><div class="bigstats"><div><strong>1 857</strong><span class="small">K€ réalisés</span></div><div><strong>1 884</strong><span class="small">K€ objectif minimum</span></div><div><strong class="up">98,6%</strong><span class="small">atteints</span></div></div><div class="progress"><div class="bar"></div></div></section></section>
   <section id="newsPage" class="hide"><div class="title"><h1>ACTUALITÉS</h1><b>INFORMATIONS DU MOMENT</b></div><article class="news-card featured"><div class="news-copy"><h2>✨ Nouvelle fonctionnalité disponible sur Planner</h2><p>Lorsque vous faites un clic droit sur un meuble, vous accédez directement à un menu rapide proposant six fonctions : <b>modifier, replacer, ouvrir, positionner, dupliquer et supprimer</b>.</p><p>Vous bénéficiez également d’un accès plus rapide à l’éditeur de plan de travail.</p></div></article><article class="news-card"><div class="news-copy"><h2>Cuisine Weeks</h2><p>Jusqu’à <b>−40 %</b> sur une sélection de cuisines et plans de travail, avec paiement en <b>20 fois sans frais</b>.</p><p class="small">Offre valable jusqu’au 26 octobre 2026. Voir conditions en magasin.</p></div></article><article class="news-card"><div class="news-copy"><h2>Applicatif Planner HOP</h2><p>Bonjour à tous,</p><p>La gamme HOP est actuellement en cours de déploiement sur le SMO. Le Planner n’est pas encore disponible à ce jour. Dès sa mise en service, une communication dédiée vous sera adressée.</p><p>Dans cette attente, merci de ne pas cliquer sur le bouton HOP. Nous vous remercions pour votre patience et votre compréhension.</p></div></article></section>
 </main>
 <footer class="footer"><div class="footerin"><button class="nav active" data-page="rankingsPage">🏆<br>Classement</button><button class="nav" data-page="challengesPage">🎯<br>Challenges</button><button class="nav news-alert" data-page="newsPage">📣<br>Actualités</button></div></footer>
 <script>
 const sellers=[
-  {name:'Sandrine',store:'Dijon',ca:132839,face:'👩🏻‍🦱',newLeader:true},
-  {name:'Anaïs',store:'Cluses',ca:125029,face:'👩🏻'},
-  {name:'Vincent',store:'Chalon / Bourg-en-Bresse',ca:122310,face:'👨🏻'},
-  {name:'Adrien',store:'Bourg-en-Bresse',ca:108594,face:'👨🏻'},
-  {name:'Pedro',store:'Annemasse',ca:104633,face:'👨🏽'},
-  {name:'Emyn',store:'Lons-le-Saunier',ca:94802,face:'👨🏽‍🦲'},
-  {name:'Carla',store:'Annecy-Sillingy',ca:89991,face:'👩🏻'},
-  {name:'Marie',store:'Annemasse',ca:85713,face:'👩🏻'},
-  {name:'Graciela',store:'Thonon',ca:82275,face:'👩🏽'},
-  {name:'Élodie',store:'Annecy-Sillingy',ca:79938,face:'👱🏻‍♀️'},
-  {name:'Emily',store:'Thonon',ca:76389,face:'👩🏻'},
-  {name:'Méven',store:'Dole / Gray / Besançon',ca:74382,face:'👨🏻'},
-  {name:'Jérôme O.',store:'Dijon',ca:73864,face:'👨🏻‍🦲',glasses:true},
-  {name:'Frédéric',store:'Pontarlier',ca:64807,face:'👨🏻‍🦳',glasses:true},
+  {name:'Sandrine',store:'Dijon',ca:145113,face:'👩🏻‍🦱',newLeader:true},
+  {name:'Anaïs',store:'Cluses',ca:131305,face:'👩🏻'},
+  {name:'Vincent',store:'Chalon / Bourg-en-Bresse',ca:128732,face:'👨🏻'},
+  {name:'Pedro',store:'Annemasse',ca:126486,face:'👨🏽'},
+  {name:'Adrien',store:'Bourg-en-Bresse',ca:118191,face:'👨🏻'},
+  {name:'Emyn',store:'Lons-le-Saunier',ca:107772,face:'👨🏽‍🦲'},
+  {name:'Graciela',store:'Thonon',ca:101687,face:'👩🏽'},
+  {name:'Carla',store:'Annecy-Sillingy',ca:92359,face:'👩🏻'},
+  {name:'Élodie',store:'Annecy-Sillingy',ca:91763,face:'👱🏻‍♀️'},
+  {name:'Frédéric',store:'Pontarlier',ca:85565,face:'👨🏻‍🦳',glasses:true},
+  {name:'Marie',store:'Annemasse',ca:85529,face:'👩🏻'},
+  {name:'Méven',store:'Dole / Gray / Besançon',ca:83147,face:'👨🏻'},
+  {name:'Emily',store:'Thonon',ca:83023,face:'👩🏻'},
+  {name:'Jérôme O.',store:'Dijon',ca:80573,face:'👨🏻‍🦲',glasses:true},
+  {name:'Bruno',store:'Chaumont',ca:47247,face:'👨🏻‍🦳'},
   {name:'Chloé P.',store:'Annecy-Sillingy',ca:44287,face:'👩🏼'},
-  {name:'Chloé C.',store:'Langres',ca:32141,face:'👩🏻'},
-  {name:'Cédric',store:'Chaumont',ca:31288,face:'👨🏻'},
-  {name:'Bruno',store:'Chaumont',ca:28856,face:'👨🏻‍🦳'},
+  {name:'Chloé C.',store:'Langres',ca:39092,face:'👩🏻'},
+  {name:'Cédric',store:'Chaumont',ca:31384,face:'👨🏻'},
   {name:'Sanja',store:'Cosy Beaune',ca:20434,face:'👩🏻'},
   {name:'Katia',store:'Chalon-sur-Saône',ca:12845,face:'👩🏻',glasses:true},
+  {name:'Anthony',store:'Thonon',ca:12114,face:'👨🏻'},
   {name:'Jérôme D.',store:'Besançon Châteaufarine',ca:9264,face:'👨🏻'},
-  {name:'Thi Thuy Phuong',store:'Bourg-en-Bresse',ca:8532,face:'👩🏻'},
+  {name:'Thi Thuy Phuong',store:'Bourg-en-Bresse',ca:8456,face:'👩🏻'},
   {name:'Ambre',store:'Cluses',ca:7000,face:'👩🏻'},
-  {name:'Anthony',store:'Thonon',ca:6530,face:'👨🏻'},
   {name:'Pauline',store:'Dole',ca:5777,face:'👩🏻'},
-  {name:'Maxime',store:'Thonon',ca:3997,face:'👨🏻'},
+  {name:'Maxime',store:'Thonon',ca:4262,face:'👨🏻'},
+  {name:'Julian',store:'Chalon-sur-Saône',ca:2060,face:'👨🏻'},
+  {name:'Guillaume',store:'Bourg-en-Bresse',ca:1035,face:'👨🏻'},
   {name:'Julien',store:'Cluses',ca:950,face:'👨🏻'},
-  {name:'Julian',store:'Chalon-sur-Saône',ca:0,face:'👨🏻'}
+  {name:'Anis',store:'Annemasse',ca:0,face:'👨🏻'},
+  {name:'Sandrine M.',store:'Pontarlier',ca:0,face:'👩🏻'}
 ];
 const stores=[
-  {name:'Annecy-Sillingy',ca:235000},{name:'Dijon',ca:216000},{name:'Annemasse',ca:211000},{name:'Thonon',ca:180000},{name:'Cluses',ca:140000},{name:'Chalon-sur-Saône',ca:140000},{name:'Bourg-en-Bresse',ca:133000},{name:'Lons-le-Saunier',ca:109000},{name:'Dole',ca:79000},{name:'Chaumont',ca:76000},{name:'Pontarlier',ca:73000},{name:'Langres',ca:41000},{name:'Besançon Châteaufarine',ca:27000},{name:'Cosy Beaune',ca:24000},{name:'Cosy Gray',ca:12000}
+  {name:'Annecy-Sillingy',ca:237000},{name:'Dijon',ca:235000},{name:'Annemasse',ca:231000},{name:'Thonon',ca:211000},{name:'Chalon-sur-Saône',ca:149000},{name:'Cluses',ca:147000},{name:'Bourg-en-Bresse',ca:143000},{name:'Lons-le-Saunier',ca:120000},{name:'Pontarlier',ca:94000},{name:'Dole',ca:88000},{name:'Chaumont',ca:87000},{name:'Langres',ca:46000},{name:'Besançon Châteaufarine',ca:28000},{name:'Cosy Beaune',ca:25000},{name:'Cosy Gray',ca:15000}
 ];
 const euro=v=>v.toLocaleString('fr-FR',{style:'currency',currency:'EUR',maximumFractionDigits:0});
 const avatar=x=>`<div class="avatar">${x.face||'🏬'}${x.glasses?'<span class="glasses">👓</span>':''}</div>`;
 function renderSellers(){const order=[1,0,2];document.getElementById('sellerPodium').innerHTML=order.map(i=>`<div class="p ${i===0?'first pulse':''}"><div class="medal">${['🥇','🥈','🥉'][i]}</div>${sellers[i].newLeader?'<div class="leader-badge">✨ Nouveau leader ✨</div>':''}${avatar(sellers[i])}<div class="name">${sellers[i].name}</div><div class="store">${sellers[i].store}</div><div class="ca">${euro(sellers[i].ca)}</div></div>`).join('');document.getElementById('sellerTable').innerHTML='<div class="row head"><div>#</div><div>VENDEUR</div><div>MAGASIN</div><div style="text-align:right">CA BUFFET</div></div>'+sellers.slice(3).map((x,j)=>`<div class="row"><b>${j+4}</b><b>${x.name}</b><span class="small">${x.store}</span><span class="money">${euro(x.ca)}</span></div>`).join('')}
-function renderStores(){const total=1698000;const part=x=>(x.ca/total*100).toLocaleString('fr-FR',{maximumFractionDigits:1})+' % de la région';const order=[1,0,2];document.getElementById('storePodium').innerHTML=order.map(i=>`<div class="p ${i===0?'first pulse':''}"><div class="medal">${['🥇','🥈','🥉'][i]}</div>${avatar({face:'🏬'})}<div class="name">${stores[i].name}</div><div class="store">${part(stores[i])}</div><div class="ca">${euro(stores[i].ca)}</div></div>`).join('');document.getElementById('storeTable').innerHTML='<div class="row head"><div>#</div><div>MAGASIN</div><div>PART RÉGION</div><div style="text-align:right">CA CUISINE</div></div>'+stores.slice(3).map((x,j)=>`<div class="row"><b>${j+4}</b><b>${x.name}</b><span class="small">${part(x)}</span><span class="money">${euro(x.ca)}</span></div>`).join('')}
+function renderStores(){const total=1857000;const part=x=>(x.ca/total*100).toLocaleString('fr-FR',{maximumFractionDigits:1})+' % de la région';const order=[1,0,2];document.getElementById('storePodium').innerHTML=order.map(i=>`<div class="p ${i===0?'first pulse':''}"><div class="medal">${['🥇','🥈','🥉'][i]}</div>${avatar({face:'🏬'})}<div class="name">${stores[i].name}</div><div class="store">${part(stores[i])}</div><div class="ca">${euro(stores[i].ca)}</div></div>`).join('');document.getElementById('storeTable').innerHTML='<div class="row head"><div>#</div><div>MAGASIN</div><div>PART RÉGION</div><div style="text-align:right">CA CUISINE</div></div>'+stores.slice(3).map((x,j)=>`<div class="row"><b>${j+4}</b><b>${x.name}</b><span class="small">${part(x)}</span><span class="money">${euro(x.ca)}</span></div>`).join('')}
 renderSellers();renderStores();document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('sellers').classList.toggle('hide',b.dataset.view!=='sellers');document.getElementById('stores').classList.toggle('hide',b.dataset.view!=='stores')}));document.querySelectorAll('.nav').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active'));b.classList.add('active');['rankingsPage','challengesPage','newsPage'].forEach(id=>document.getElementById(id).classList.toggle('hide',id!==b.dataset.page));window.scrollTo({top:0,behavior:'smooth'})}));
 </script>
 </body>
